@@ -1,0 +1,35 @@
+button {
+    transition: background-color 1.3s ease;
+}
+
+button:hover {
+    background-color: #3498db;;
+}
+
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: #3498db;
+    animation: pulse 2s ease-in-out infinite;
+}
+
+#animated-box {
+    width: 100px;
+    height: 100px;
+    background-color: #ff5733;
+    position: relative;
+    transition: transform 1s ease;
+}
