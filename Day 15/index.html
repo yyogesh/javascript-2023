@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dropdown">
+        <div
+            class="dropdown-button"
+            role="button"
+            aria-haspopup="true"
+            aria-expanded="false"
+            onclick="toggleDropdown()"
+        >
+            Menu
+        </div>
+        <div class="dropdown-content">
+            <a href="#" onclick="selectOption('Option 1')">Option 1</a>
+            <a href="#" onclick="selectOption('Option 2')">Option 2</a>
+            <a href="#" onclick="selectOption('Option 3')">Option 3</a>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

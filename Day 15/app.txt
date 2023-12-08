@@ -1,0 +1,98 @@
+1. Semantic HTML:
+Use semantic HTML elements (e.g., <header>, <nav>, <main>, <section>, <article>, <footer>) to provide a meaningful structure to your content.
+
+2. Proper Document Structure:
+Ensure a logical and hierarchical structure for your document.
+Use heading tags (<h1>, <h2>, etc.) appropriately to create a clear outline.
+
+3.Text Alternatives for Images:
+
+Provide descriptive alternative text (alt attribute) for images using meaningful and concise descriptions.
+For decorative images, use empty (alt="") or null (alt attribute not present) alternative text.
+<img src="example.jpg" alt="A description of the image">
+
+4. Semantic Forms:
+Use semantic form elements (<form>, <input>, <label>, <button>) and associate labels with form controls.
+
+<label for="username">Username:</label>
+<input type="text" id="username" name="username">
+
+5. Accessible Links:
+
+Write meaningful link text that describes the link's purpose.
+Avoid using "click here" or other generic link text.
+
+<a href="https://example.com">Visit Example Website</a>
+
+6. Keyboard Navigation:
+
+Ensure all interactive elements (links, buttons, form controls) are accessible via keyboard navigation.
+Test your website's functionality using only the keyboard
+
+7. Skip to Content Link:
+Include a "Skip to Content" link at the beginning of the page to allow keyboard users to skip repetitive navigation and go directly to the main content.
+
+<a href="#main-content" class="skip-to-content">Skip to main content</a>
+
+8. Use headings to create a clear and informative hierarchy.
+Avoid skipping heading levels.
+
+9. Color Contrast:
+Ensure sufficient color contrast between text and background to improve readability.
+Use tools to check color contrast ratios.
+
+10. ARIA Roles and Attributes:
+Use ARIA (Accessible Rich Internet Applications) roles and attributes to enhance the accessibility of dynamic content.
+
+<div role="alert" aria-live="assertive">This is an important message!</div>
+
+Tables:
+
+Use semantic HTML for data tables (<table>, <thead>, <tbody>, <th>, <td>).
+Provide appropriate table headers using <th>.
+Testing:
+
+Regularly test your website with accessibility tools such as screen readers and browser extensions.
+Conduct usability testing with people with disabilities.
+Responsive Design:
+
+Ensure your website is responsive and provides a good user experience across various devices and screen sizes.
+
+
+*********************************************************
+
+<div role="button" tabindex="0">Click me</div>
+
+role Attribute:
+
+Specifies the role of an element.
+Example: <div role="button">Click me</div>.
+aria-* Attributes:
+
+Various attributes that provide additional information about an element's state or properties.
+Examples:
+aria-hidden: Indicates whether an element is visible or hidden (aria-hidden="true").
+aria-disabled: Indicates whether an element is disabled (aria-disabled="true").
+aria-labelledby and aria-describedby: Associates an element with another element(s) that provides a label or description.
+
+
+aria-live Attribute:
+
+Defines the assertiveness level for live regions. Live regions are areas of a page that are expected to be dynamically updated.
+Values: "off", "assertive", "polite".
+Example: <div aria-live="assertive">Important update!</div>.
+
+aria-haspopup Attribute:
+
+Indicates that an element has a popup or a menu.
+Example: <button aria-haspopup="true">Open Menu</button>.
+
+aria-expanded Attribute:
+
+Indicates whether an element, such as a menu or tree, is expanded or collapsed.
+Example: <button aria-expanded="true">Expanded</button>.
+
+aria-controls Attribute:
+
+Associates an element with another element that serves as a container for the controlled content.
+Example: <div id="menu" aria-controls="submenu">Menu</div> <div id="submenu">...</div>.
